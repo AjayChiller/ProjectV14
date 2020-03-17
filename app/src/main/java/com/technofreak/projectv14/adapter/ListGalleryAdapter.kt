@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.layout_blog_list_item.view.*
 import kotlinx.android.synthetic.main.listitem.view.*
 
 
-class test(private val list: List<GalleryPicture>) : RecyclerView.Adapter<GVH2>() {
+class ListGalleryAdapter(private val list: List<GalleryPicture>) : RecyclerView.Adapter<GVH2>() {
 
     private lateinit var onClick: (GalleryPicture) -> Unit
 
