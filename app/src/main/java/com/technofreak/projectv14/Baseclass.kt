@@ -1,7 +1,6 @@
 package com.technofreak.projectv14
 
 import android.Manifest
-import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
@@ -13,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.technofreak.projectv14.adapter.GVH2
 import com.technofreak.projectv14.model.GalleryPicture
 import com.technofreak.projectv14.viewmodel.GalleryViewModel
 
@@ -23,7 +21,7 @@ open class Baseclass : AppCompatActivity()
     lateinit var galleryViewModel: GalleryViewModel
     lateinit var pictures: ArrayList<GalleryPicture>
     companion object {
-        var flag:Int=0;
+        var flag: Int = 0
 
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -84,9 +82,9 @@ open class Baseclass : AppCompatActivity()
         //init()
         else {
             showToast("Permission Required to Fetch Gallery.")
-           
-            finish();
-            System.exit(0);
+
+            finish()
+            System.exit(0)
         }
     }
 
